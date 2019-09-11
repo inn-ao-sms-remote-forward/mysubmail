@@ -1,0 +1,19 @@
+{
+    "name": "kmvan/mysubmail",
+    "description": "赛邮 for INN AO",
+    "type": "project",
+    "license": "GPL-v3.0",
+    "authors": [
+        {
+            "name": "kmvan",
+            "email": "kmvan.com@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "InnStudio\\MySubMail\\":"src/"
+        }
+    },
+    "require": {}
+}
