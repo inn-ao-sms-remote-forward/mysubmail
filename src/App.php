@@ -37,7 +37,7 @@ final class App
 
     private function setPhoneNumber(): void
     {
-        $this->phoneNumber = (string) \filter_input(\INPUT_GET, 'number', \FILTER_SANITIZE_STRING);
+        $this->phoneNumber = (string) \filter_input(\INPUT_GET, 'number', \FILTER_VALIDATE_INT);
 
         if ( ! $this->phoneNumber) {
             die('Invalid phone number.');
