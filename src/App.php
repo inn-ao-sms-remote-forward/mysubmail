@@ -62,7 +62,7 @@ final class App
             'appid'     => $this->appId,
             'to'        => $this->phoneNumber,
             'content'   => $this->sms,
-            'signature' => $this->appsecret,
+            'signature' => $this->appSecret,
         ]);
         \curl_setopt($ch, \CURLOPT_RETURNTRANSFER, 1);
         $res = \curl_exec($ch);
